@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aqua;
+        }
+.product {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(9, 9, 9, 0.1);
+
+  
+}
+.items:hover{
+    background-color: burlywood;
+    transform:scale(1.1)
+
+    
+}
+
+.items img {
+  width: 100%;
+  height: 200px;
+  align-items: center;
+  margin-bottom: 10px;
+
+}
+
+.items h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.items p {
+  line-height: 1.5;
+  color: #666;
+}
+
+.items .price {
+  font-weight: bold;
+  color: #222;
+}
+h1{
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Product show case</h1>
+    <div class="product">
+        <div class="items">
+          <img src="https://images.samsung.com/is/image/samsung/p6pim/in/rt28c3922cr-hl/gallery/in-top-mount-freezer-rt30m3744ut-201163-rt28c3922cr-hl-535085841?$730_584_PNG$" alt="Product 1">
+          <h3>samsung</h3>
+          <p>236L Convertible Freezer Double Door Refrigerator RT28C3922CR</p>
+          <span class="price"> price:12000</span>
+        </div>
+        <div class="items">
+            <img src="https://www.lg.com/in/images/refrigerators/md07524765/gallery/GL-I292RPZX-Refrigerators-Front-View-D-01.jpg" alt="Product 2">
+            <h3>lg</h3>
+            <p>LG 380 litres 2 Star Double Door Refrigerator, Dazzle Steel GL-N412SDSY.</p>
+            <span class="price">price:20000</span>
+          </div>
+          <div class="items">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8_Osb4ij1-CNhIqpiR5PoqZ2HFuvO-IKIXQ&usqp=CAU" alt="Product 3">
+            <h3>whilpool</h3>
+            <p>Maroon 190 Liter Capacity Floral Printed Design Single Door Refrigerator .</p>
+            <span class="price">price:12000</span>
+          </div>
+          <div class="items">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCEtWvovduVkT_Si0zHShCm5_0QH_WXo2S2Q&usqp=CAU" alt="Product 4">
+            <h3>IFL</h3>
+            <p>NEW IFBFF-2902FBS Frost Free Refrigerator 243 L | 2 Star | Surround - Cool Series .</p>
+            <span class="price">PRICE:18000</span>
+          </div>
+          <div class="items">
+            <img src="https://www.lg.com/in/images/refrigerators/md07558320/gallery/GL-D211HPZZ-Refrigerators-Front-View-DZ-01.jpg" alt="Product 5">
+            <h3>LG</h3>
+            <p>201 Ltr, 5 Star, Smart Inverter Compressor, Smart Connect, With Base Stand Drawer, .</p>
+            <span class="price">price:15000</span>
+          </div>
+          <div class="items">
+            <img src="https://www.mylloyd.com/media/products/small178.jpg" alt="Product 6">
+            <h3>lloyd</h3>
+            <p>201 Ltr, 5 Star, Smart Inverter Compressor, Smart Connect, With Base Stand Drawer, .</p>
+            <span class="price">price:18000</span>
+          </div>
+        </div>
+      
+</body>
+</html>

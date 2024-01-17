@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Card Grid</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            background-color: #4e858b;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            max-width: 800px;
+            
+        }
+
+        .card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .content {
+            padding: 16px;
+        }
+
+        .title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .about{
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card-grid">
+        <div class="card">
+            <img src="sachin.jpg" alt="Sachin Tendulkar">
+            <div class="content">
+                <div class="title">Sachin Tendulkar</div>
+                <div class="about"> <b>Sachin Tendulkar </b>was introduced to international cricket against the
+                   lethal Pakistan team in 1989. He cemented his position in the team after displaying his 
+                   exceptional knocks against the world's best sides. His career lasted more than two decades 
+                   which itself speaks volumes about his talent.
+
+                  His scoring charts read a mammoth 15921 runs in 200 Test matches. In the ODIs, he has scored 
+                  18426 runs at an average of 44.83. One of the biggest highlights of his cricketing career was 
+                  his double hundred against South Africa in the Gwalior cricket stadium. Classical cricketing Test 
+                  book shots made Sachin one of the tallest cricket legends of India. </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img style=" height:340px;" src="Kapildev.jpg" alt=" Kapil Dev">
+            <div class="content">
+                <div class="title"> Kapil Dev</div>
+                <div class="about">One of the most recognized Indian cricketers,<b> Kapil Dev</b> has played an
+                   unparalleled role in Indian cricket. He laid the foundation stone of cricket's glory in India.
+                    The batting all-rounder played for the nation in 136 Test matches. He has slaughtered 5248 runs 
+                    and collected 434 
+                  wickets before he drew curtains on his glorious cricket career.
+
+                  One of his momentous innings was against Zimbabwe in the 1983 World Cup where he scored his career-best 173 runs which ensured that India remained alive in the World Cup. Eventually, India went on to cling to the trophy after defeating the West Indies in the finals at the Lords cricket stadium. The rest is history..</div>
+            </div>
+        </div>
+         <div class="card-grid"> 
+            <div class="card">
+                <img src="dravid.jpg" alt="Rahul Dravid">
+                <div class="content">
+                    <div class="title"> Rahul Dravid</div>
+                    <div class="about">Often regarded as the ‘Wall', <b>Rahul Dravid</b>'s presence as the crease gave 
+                      satisfaction and relief to the millions watching across the globe.</div>
+                </div>
+            </div>
+    
+            <div class="card">
+                <img src="kumble.jpg" alt="Anil Kumble">
+                <div class="content">
+                    <div class="title">Anil Kumble</div>
+                    <div class="about">Former Indian captain, <b>Anil Kumble </b>is revered as the greatest match-winner for India</div>
+                </div>
+            </div>
+            
+
+        
+
+    </div>
+
+</body>
+</html>

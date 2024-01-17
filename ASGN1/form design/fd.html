@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .form{
+    position:absolute;
+    top:180px;
+    left: 530px;
+    border: 3px;
+    font-size: larger;
+
+    border-style:solid;
+    padding: 20px;
+
+}
+body{
+    background-image: url("bg1.jpg");
+    background-size: cover;
+}
+h1{
+    margin-top: 100px;
+}
+    </style>
+</head>
+<body>
+    <center><h1>Simple form design</h1></center><div class="form">
+    <form  action="" method="POST" enctype="">
+
+        <label  for="name"><B>NAME</B></label><br />
+        <input type="text" id="name"  name="name"  placeholder="enter name" /><br />
+        
+      
+        <label for="email" ><b>EMAIL</b></label><br />
+        <input id="email" class="input" name="email" placeholder="enter email " required /><br />
+         
+      
+        <label for="message"><B>MESSAGE</B></label><br />
+        <textarea id="message"  name="message" rows="6" cols="20" placeholder="entermessage"></textarea><br />
+        <span id="message_validation" class="error_message"></span>
+      
+        
+        <input id="submit" type="submit" value="submit" />    </div>
+      </form>
+      </center>
+      
+      </body>
+      <footer></footer>
+      </html>
+</body>
+</html>

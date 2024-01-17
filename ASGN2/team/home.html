@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team Member Cards</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+
+    .team{
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      width: 300px;
+      margin: 20px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+     
+      transition: transform 0.3s ;
+      cursor: pointer;
+      box-shadow: 0 0 10px 0 #555
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .minfo {
+
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      padding: 0;
+    }
+
+    .name {
+        text-align: center;
+        margin-top: 10px;
+      font-size:larger;
+      font-weight: bold;
+    }
+
+    .role {
+        text-align: center;
+        margin-top: 10px;
+      color: #555;
+    }
+
+    .about {
+      margin-top: 10px;}
+      img{
+        height: auto;
+        width: 300px;
+      }
+      h1{
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        margin: 30px;
+      }
+
+
+    
+  </style>
+</head>
+<body>
+    <div class="head">
+        <h1>Team</h1>
+    </div>
+
+<div class="team">
+  <div class="card">
+    <div class="minfo">
+        <img src="manager.jpg" alt="">
+      <div class="name">Sathish S P</div>
+      <div class="role">MANAGER</div>
+      <div class="about">Passionate about managing a task.</div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="minfo">
+        <img src="developer.jpg" alt="">
+      <div class="name">Santhosh Y</div>
+      <div class="role">Developer</div>
+      <div class="about">Passionate about coding and creating awesome web applications.</div>
+    </div>
+  </div>
+  <div class="card">
+    <img src="example.jpg" alt="">
+    <div class="minfo">
+      <div class="name">Sudarshan K</div>
+      <div class="role">Developer</div>
+      <div class="about">Passionate about coding and creating awesome web applications.</div>
+    </div>
+  </div>
+
+  
+  <!-- Add more team member cards as needed -->
+</div>
+
+</body>
+</html>

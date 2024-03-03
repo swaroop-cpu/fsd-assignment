@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+</head>
+<body>
+ <input type="text" id="enterinput" oninput="handleInput()">
+ <div id="display"></div>
+ <script>
+   let debounceTimer;
+   let throttleTimer;
+   const delay = 3000; 
+   
+   function handleInput() {
+     clearTimeout(debounceTimer);
+     clearTimeout(throttleTimer);
+     debounceTimer = setTimeout(search, delay);
+     
+     
+     throttleTimer = setTimeout(updateSuggestions, 1000)
+   }
+
+   function search() {
+     let inp = document.getElementById("enterinput").value.toUpperCase();
+     let suggestionList = document.getElementById("display");
+     suggestionList.innerHTML = ``;
+     fetch("https://fakestoreapi.com/products")
+       .then(res => res.json())
+       .then(json => {
+         for (product of json) {
+           let title = product.title.toUpperCase();
+           if (title.startsWith(inp)) {
+             let listitem = document.createElement(`li`);
+             listitem.innerText = title;
+             suggestionList.appendChild(listitem);
+           }
+         }
+       });
+   }
+
+   function updateSuggestions() {
+    
+   }
+ </script>
+</body>
+</html>
+
+
